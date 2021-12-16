@@ -21,9 +21,9 @@
 
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
-            <div class="row row-content align-items-center">
+            <div class="row align-items-center">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
+                    <a href="#"><img src="img/logo.png" class="img-fluid" /></a>
                 </div>
                 <div class="col">
                     <h1>NuCamp</h1>
@@ -31,7 +31,7 @@
                 </div>
                 <!-- Reserve Button anchor -->
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a href="#reserveForm" class="btn btn-info btn-lg">Reserve Campsite</a>
+                    <a class="btn btn-info btn-lg" href="#resCard" role="button" >Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -111,17 +111,19 @@
                         </div>
                     </div>
             </div>
+
             <div class="row row-content align-items-center">
                 <div class="col-sm-6 mx-auto">
-                    <div class="card">
+                    <div class="card" id="resCard">
                         <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                         <div class="card-body">
-                            <form id="reserveForm">
+                            <form action="sumbit">
                                 <div class="row form-group">
-                                    <label for="numCampers" class="col col-sm-6">Number of Campers</label>
-                                    <div class="col-sm-6">
+                                    <label for="numCampers" class="col col-sm-6 col-form-label">Number of Campers</label>
+
+                                    <div class="col">
                                         <select name="numCampers" class="form-control" id="numCampers">
-                                          <option selected>Select...</option>
+                                          <option selected disabled hidden>Select....</option>
                                           <option value="1">1</option>
                                           <option value="2">2</option>
                                           <option value="3">3</option>
@@ -132,8 +134,11 @@
                                       </div> 
                                 </div>
                                 <div class="row form-group">
-                                    <label for="date" class="col-sm-6">Date</label>
-                                    <input type="date" id="date" class="col-sm-6 form-control"  name="date" placeholder="mm/dd/yyyy"/>
+                                    <label for="resDate" class="col-sm-6 col-form-label">Date</label>
+
+                                        <div class="col col-sm-6">
+                                            <input type="date" id="resDate" class="form-control"  name="date" placeholder="mm/dd/yyyy"/>
+                                        </div>
                                 </div>
 
                                 <div class="form-group row">
@@ -149,7 +154,7 @@
     </div>
     
 
-        <footer class="site footer">
+        <footer class="site-footer">
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-sm-2 offset-1">

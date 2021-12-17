@@ -12,97 +12,98 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com?family=Lobster|Open+Sans" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/stylesCoCh.css" />
 
         <title> NuCamp: A Better Way To Camp</title>
     </head>
 
 <body>
+<!-- Vertical navbar -->
+<header class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row align-items-center">
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row align-items-center">
+            <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                <a href="#"><img src="img/logo.png" class="img-fluid" /></a>
+            </div>
 
-                <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="#"><img src="img/logo.png" class="img-fluid" /></a>
-                </div>
-
-                <div class="col">
-                    <h1>NuCamp</h1>
-                    <h2>a better way to camp</h2>
-                </div>
-                
-                <!-- Reserve Button anchor -->
-                <div class="justify-content-sm-end col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info btn-lg" href="#resCard" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
-                </div>
+            <div class="col">
+                <h1>NuCamp</h1>
+                <h2>a better way to camp</h2>
+            </div>
             
+            <!-- Reserve Button anchor -->
+            <div class="justify-content-sm-end col-md-4 col-xl-2 mt-4">
+                <a class="btn btn-info btn-lg" href="#resCard" role="button" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
             </div>
+        
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Navbar setup for Home(Index) Page -->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"    data-target="#nucampNavbar"> 
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<!-- Navbar setup for Home(Index) Page -->
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"    data-target="#nucampNavbar"> 
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Add Font Awesome Fonts to Navbar links -->
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
-                </ul>
-                <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class=" fa fa-sign-in"></i> Login
-                    </a>
-                </span>
+        <!-- Add Font Awesome Fonts to Navbar links -->
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>Sites</a></li>
+                <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
+            </ul>
+            <span class="navbar-text ml-auto">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class=" fa fa-sign-in"></i> Login
+                </a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<!-- Login Dialog Box -->
+<div id="loginModal" class=" modal fade" role="dialog">
+    <div class=" modal-dialog" role="document">
+        <div class=" modal-content">
+            <div class=" modal-header">
+                <h3 class=" modal-title"> Login</h3>
+                <button type="button" class="close" data-dismiss="modal"> &times;</button>
             </div>
-        </div>
-    </nav>
-    <!-- Login Dialog Box -->
-    <div id="loginModal" class=" modal fade" role="dialog">
-        <div class=" modal-dialog" role="document">
-            <div class=" modal-content">
-                <div class=" modal-header">
-                    <h3 class=" modal-title"> Login</h3>
-                    <button type="button" class="close" data-dismiss="modal"> &times;</button>
+            <div class=" modal-body">
+                <div class=" container-fluid">
+                    <form>
+                        <div class=" form-row">
+                            <div class=" form-group col">
+                                <label class=" sr-only" for="loginEmail"> Email address</label>
+                                <input type="email" class=" form-control form-control-sm" id="loginEmail" placeholder="Enter email">                                
+                            </div>
+                            <div class=" form-group col-12">
+                                <label class=" sr-only" for="loginPassword">Password</label>
+                                <input type="password" class=" form-control form-control-sm" id="loginPassword" placeholder="Password">
+                            </div>
+                            <div class="col">
+                                <div class=" form-check">
+                                    <input class=" form-check-input" type="checkbox">
+                                    <label class=" form-check-label"> Remember me </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" form-row">
+                            <button type="button" class=" btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class=" btn btn-primary btn-sm ml-1">Sign in</button>
+                        </div>
+                    </form>
                 </div>
-                <div class=" modal-body">
-                    <div class=" container-fluid">
-                        <form>
-                            <div class=" form-row">
-                                <div class=" form-group col">
-                                    <label class=" sr-only" for="loginEmail"> Email address</label>
-                                    <input type="email" class=" form-control form-control-sm" id="loginEmail" placeholder="Enter email">                                
-                                </div>
-                                <div class=" form-group col-12">
-                                    <label class=" sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class=" form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class=" form-check">
-                                        <input class=" form-check-input" type="checkbox">
-                                        <label class=" form-check-label"> Remember me </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" form-row">
-                                <button type="button" class=" btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class=" btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>
-                        </form>
-                    </div>
-                </div> 
-            </div>
+            </div> 
         </div>
-    </div>    
-
+    </div>
+</div>    
+<!-- Carousel begins -->
     <div class="container">
 
             <div class="row row-content align-items-center">
@@ -154,60 +155,50 @@
                 </div>
             </div>    
 
-                <div class=" row row-content align-items-center">
-                    <div class="col-sm-4 order-sm-last col-md-3">
-                        <h2 class="text-sm-right"> Discover & Review</h2>
-                    </div>
-                
+            <!-- Carousel ends -->
+            <!-- Card Group begins-->
+            <!-- Card 1 -->
+            
+            <div  class="card-deck mt-auto">
+                <div id="card1" class="card">
+                    <img src="img/breadcrumb-trail-thumb.jpg" class="d-flex img-thumbnail card-img-top" alt="...">
 
-                    <div class="col">
-
-                        <div class="media">
-                            <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
-
-                            <div class="media-body align-self-center">
-                                <h3>Our Campsites</h3>
-                                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-                            </div>
-                        </div>
+                    <div class=" card-body">
+                        <h2 class=" card-title">Discover & Review</h2>
+                        <h3 class=" card-text">Our Campsites</h3>
+                        <p class=" card-text"><small class="text-muted d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</small></p>
                     </div>
                 </div>
+                <!-- Card 1 ends  -->
+                <!-- Card 2 begins -->
 
-            <div class="row row-content align-items-center">
+                <div id="card2" class="card ">
+                    <img src="img/react-lake-thumb.jpg" class=" d-flex img-thumbnail card-img-top" alt="...">
 
-                <div class="col-sm-4 col-md-3 ">
-                    <h2>Featured Campsites</h2>
-                </div>
-
-                <div class="col">
-                    <div class="media">
-                        
-                        <div class="media-body align-self-center">
-                            <h3>React Lake Campground</h3>
-                            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this Campground on the shores of the pristine React Lake is a favorite for fly fishers</p>
-                        </div>
-                                
-                        <img class="d-flex ml-3 img-thumbnail order-last" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                    <div class=" card-body">
+                        <h2 class=" card-title">Featured Campsites</h2>
+                        <h3 class=" card-text">React Lake Campground</h3>
+                        <p class=" card-text"><small class="text-muted d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this Campground on the shores of the pristine React Lake is a favorite for fly fishers</small></p>
                     </div>
                 </div>
+
+                <!-- Card 2 Ends -->
+                <!-- Card 3 begins -->
+
+                <div id="card3" class="card ">
+                    <img src="img/bootstrap-thumb.png" class=" d-flex img-thumbnail card-img-top" alt="...">
+
+                    <div class=" card-body">
+                        <h2 class=" card-title">Our Community Partners</h2>
+                        <h3 class=" card-text">Bootstrap Outfitters</h3>
+                        <p class=" card-text"><small class="text-muted d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</small></p>
+                    </div>
+                </div>
+                <!-- Card 3 ends-->
+            <!-- End of Card Group-->
             </div>
 
-            <div class="row row-content align-items-center">
-                    <div class="col-sm-4 order-sm-last col-md-3">
-                        <h2 class="text-sm-right">Our Community Partners</h2>
-                    </div>
-
-                    <div class="col">
-                        <div class="media">
-                            <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-
-                                <div class="media-body align-self-center">
-                                    <h3>Bootstrap Outfitters</h3>
-                                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                                </div>
-                        </div>
-                    </div>
-            </div>
+            <!-- Reserve a Campsite form begins-->
 
             <div class="row row-content align-items-center">
                 <div class="col-sm-6 mx-auto">
